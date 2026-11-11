@@ -43,7 +43,10 @@ the way, and expect each build to add something.
 ## Install
 
 1. Download `Outbreak-Festival-build-N.zip` from the [latest release](../../releases/latest).
-2. Unzip it somewhere you can write to (Documents, Desktop, `D:\Games`), **not** Program Files.
+2. Unzip it to a folder of your own, like `C:\Games` or `D:\Games`. **Not** in Program Files
+   (Windows won't let the game write there), and **not** in a OneDrive folder (on many PCs
+   Documents and Desktop are synced by OneDrive, which locks files while it syncs and would upload
+   gigabytes of game data).
 3. Start **Outbreak Festival.exe**.
 4. The launcher finds DiRT 3 by itself. If it can't, click **Browse...** and pick the folder that
    has `dirt3_game.exe` in it.
@@ -74,6 +77,10 @@ their own.
 **Something went wrong.**
 Open an [issue](../../issues) or tell Spooky1611 what happened. The launcher's **Logs** button
 opens the files that help.
+
+**The conversion stopped with "Access is denied" (os error 5).**
+The game folder is in Program Files or in OneDrive. Close the launcher, move the whole folder to
+`C:\Games` (or another folder of your own), start it from there and press **Convert now**.
 
 **Online says we need the same update.**
 Restart the launcher on both PCs. It updates to the newest build.
